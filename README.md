@@ -75,21 +75,19 @@ We need to install or make sure that these tools are pre-installed on your machi
 
 4. Set up environment variables
 
-   - Create a .env file in the root directory.
+   - Create a .env.local file in the root directory.
    - Add the following environment variables:
      ```
      # Appwrite
-     NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
-     NEXT_PUBLIC_APPWRITE_DATABASE_ID=your_appwrite_database_id
-     NEXT_PUBLIC_APPWRITE_STORAGE_ID=your_appwrite_storage_id
-
-     # Twilio
-     TWILIO_ACCOUNT_SID=your_twilio_account_sid
-     TWILIO_AUTH_TOKEN=your_twilio_auth_token
-     TWILIO_PHONE_NUMBER=your_twilio_phone_number
-
-     # Sentry
-     NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
+     PROJECT_ID=your_appwrite_project_id
+     API_KEY=your_appwrite_api_key
+     DATABASE_ID=your_appwrite_database_id
+     PATIENT_COLLECTION_ID=your_patient_collection_id
+     DOCTOR_COLLECTION_ID=your_doctor_collection_id
+     APPOINTMENT_COLLECTION_ID=your_appointment_collection_id
+     NEXT_PUBLIC_BUCKET_ID=your_appwrite_bucket_id
+     NEXT_PUBLIC_ENDPOINT=https://cloud.appwrite.io/v1
+     NEXT_PUBLIC_ADMIN_PASSKEY=your_admin_passkey
      ```
 
 5. Start the application
