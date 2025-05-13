@@ -1,37 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CarePulse
 
-## Getting Started
+<div align="center">
+  <img src="https://www.markaustria.com/carepulse.png" alt="CarePulse" />
 
-First, run the development server:
+[![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live Site
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Here is a working live site: [carepulse.markaustria.com](https://carepulse.markaustria.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🗒️ Check out the case study here: [markaustria.com/carepulse](https://www.markaustria.com/carepulse)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 Description
 
-## Learn More
+Welcome to CarePulse! A healthcare management system that streamlines the patient appointment process with real-time SMS notifications.
 
-To learn more about Next.js, take a look at the following resources:
+Healthcare appointments often involve long waiting times and inefficient processes. Patients typically spend hours waiting for their doctor's appointments, creating frustration and wasting valuable time. The existing manual systems lack real-time updates and proper communication channels between healthcare providers and patients.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The mission of the CarePulse project was to create a healthcare management system that streamlines the appointment process and improves communication between patients and healthcare providers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application features patient registration, appointment scheduling, and an admin dashboard for managing appointments with real-time SMS notifications.
 
-## Deploy on Vercel
+**Technologies Used:** Next.js, TypeScript, Tailwind CSS, Shadcn UI, Appwrite, Twilio, Sentry, React Hook Form, Zod
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📖 Table of Contents
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# carepulse
+- [Features](#-features)
+- [Installation](#%EF%B8%8F-setup-project)
+- [How to Contribute](#%EF%B8%8F-how-to-contribute)
+- [Bug / Feature Request](#-bug--feature-request)
+- [Future Enhancements](#-future-enhancements)
+- [Acknowledgements](#-acknowledgements)
+
+## ✨ Features
+
+- **Advanced Form Management System:** Highly reusable form system with custom components for various input types including text fields, phone inputs, date pickers, file uploads, and more. This allows for complex multi-step registration forms while maintaining clean, maintainable code.
+
+- **Real-time SMS Notifications:** SMS notifications using Appwrite and Twilio integration to keep patients informed about their appointment status. When an admin schedules or cancels an appointment, the patient receives an immediate notification with relevant details.
+
+- **Comprehensive Admin Dashboard:** Feature-rich admin dashboard with appointment statistics, a data table for managing appointments, and functionality to schedule or cancel appointments. The dashboard provides a complete overview of all patient appointments with filtering and pagination capabilities.
+
+## 🛠️ Setup Project
+
+To get this project up and running in your development environment, follow these step-by-step instructions.
+
+### 🍴 Prerequisites
+
+We need to install or make sure that these tools are pre-installed on your machine:
+
+- [Git](https://git-scm.com/downloads)
+- [NodeJS](https://nodejs.org/en/download/)
+- [NPM](https://docs.npmjs.com/getting-started/installing-node)
+
+### 🚀 Install Project
+
+1. Clone the Repository
+
+   ```bash
+   git clone https://github.com/mjaus29/carepulse.git
+   ```
+
+2. Navigate into the project directory
+
+   ```bash
+   cd carepulse
+   ```
+
+3. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+4. Set up environment variables
+
+   - Create a .env file in the root directory.
+   - Add the following environment variables:
+     ```
+     # Appwrite
+     NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+     NEXT_PUBLIC_APPWRITE_DATABASE_ID=your_appwrite_database_id
+     NEXT_PUBLIC_APPWRITE_STORAGE_ID=your_appwrite_storage_id
+
+     # Twilio
+     TWILIO_ACCOUNT_SID=your_twilio_account_sid
+     TWILIO_AUTH_TOKEN=your_twilio_auth_token
+     TWILIO_PHONE_NUMBER=your_twilio_phone_number
+
+     # Sentry
+     NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
+     ```
+
+5. Start the application
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open your web browser and navigate to <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to see the project running.
+
+7. Test the application
+
+   Run the test suite to ensure everything is working as expected.
+
+   ```bash
+   npm test
+   ```
+
+## ⚒️ How to Contribute
+
+Want to contribute? Great!
+
+To fix a bug or enhance an existing module, follow these steps:
+
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
+### 📩 Bug / Feature Request
+
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/mjaus29/carepulse/issues/new) by including your search query and the expected result.
+
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/mjaus29/carepulse/issues/new). Please include sample queries and their corresponding results.
+
+### ✅ Future Enhancements
+
+- [ ] Implement a doctor-specific interface for managing their own appointments
+- [ ] Add video consultation capabilities for remote appointments
+- [ ] Integrate with electronic health record (EHR) systems
+- [ ] Implement automated appointment reminders at configurable intervals
+
+### 📚 Acknowledgements
+
+Special thanks to JSM for the inspiration and guidance on this project.
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-markaustria.com-darkblue?style=flat&logo=web&logoColor=white)](https://www.markaustria.com/) [![GitHub](https://img.shields.io/badge/GitHub-mjaus29-black?style=flat&logo=github)](https://github.com/mjaus29) [![LinkedIn](https://img.shields.io/badge/LinkedIn-markaustria-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/markaustria/) [![Email](https://img.shields.io/badge/Email-austriamark.mja%40gmail.com-darkred?style=flat&logo=gmail&logoColor=white)](mailto:austriamark.mja@gmail.com)
+</div>
